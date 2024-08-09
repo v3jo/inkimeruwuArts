@@ -233,10 +233,13 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css
     <footer>
         <div class="footer-container">
             <div  class="social-media">
-                <a href="https://www.instagram.com/meruwucita/" class="icono-vinculo-footer" target="_blank"><i class="fab fa-instagram icono-footer"></i></a>
-            <a href="https://x.com/meruwucita" class="icono-vinculo-footer" target="_blank"><i class="fab fa-twitter icono-footer"></i></a>
+                <!-- <a href="https://www.instagram.com/meruwucita/" class="icono-vinculo-footer" target="_blank"><i class="fab fa-instagram icono-footer"></i></a>
+            <a href="https://x.com/meruwucita" class="icono-vinculo-footer" target="_blank"><i class="fab fa-twitter icono-footer"></i></a> -->
+            <a href="https://discord.gg/AJMSx5ST" class="icono-vinculo-footer" target="_blank"><i class="fa-brands fa-discord icono-footer"></i></a>
+            <button id="discord-username" onclick="copyDiscordUsername()" class="btn-footer-contact">meruwucita</button>
             
             </div>
+            
             <p class="parrafo-footer">&copy; 2024  Inkimeruwu . All rights reserved.</p>
         </div>
        
@@ -249,5 +252,30 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js
 "></script>
+<script src="https://kit.fontawesome.com/4c4a74dfb9.js" crossorigin="anonymous"></script>
+
+<script>
+    function copyDiscordUsername() {
+        const discordUsername = document.getElementById('discord-username').innerText;
+        navigator.clipboard.writeText(discordUsername).then(() => {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+    
+            Toast.fire({
+                icon: "success",
+                title: "Nombre de usuario copiado al portapapeles"
+            });
+        });
+    }
+    </script>
 </body>
 </html>
