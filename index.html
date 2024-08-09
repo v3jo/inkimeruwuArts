@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Artista Digital</title>
+    <title>Inkimeruwu - Digital Artist</title>
+    <link rel="shortcut icon" href="assets/heart.png">
     <link rel="stylesheet" href="styles.css"> <!-- Vincular archivo CSS externo -->
     <!-- Fuentes y CSS para iconos y tipografía -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,7 +12,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css
+" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navegación -->
@@ -213,13 +217,13 @@
                 <div >
                     <img src="assets/box.gif" alt="" class="left">
                 </div>
-                <div class="right">
+                <form id="frm-email" class="right">
                     <h2 class="texto-contacto">Contact</h2>
-                    <input type="text" class="field" name="" id="" placeholder="write your name">
-                    <input type="email" class="field" name="" id="" placeholder="write your email">
-                    <textarea class="field" id="" placeholder="write your message"></textarea>
-                    <button class="btn-contacto">Send</button>
-                </div>
+                    <input type="text" class="field" name="username" id="username" placeholder="write your name" required>
+                    <input type="email" class="field" name="email" id="email" placeholder="write your email" required>
+                    <textarea class="field" name="msg" id="msg" placeholder="write your message" required></textarea>
+                    <input type="submit" class="btn-contacto" value="Send">
+                </form>
             </div>
         </div>
     </section>
@@ -230,7 +234,7 @@
         <div class="footer-container">
             <div  class="social-media">
                 <a href="https://www.instagram.com/meruwucita/" class="icono-vinculo-footer" target="_blank"><i class="fab fa-instagram icono-footer"></i></a>
-            <a href="https://x.com/meruwucita/media" class="icono-vinculo-footer" target="_blank"><i class="fab fa-twitter icono-footer"></i></a>
+            <a href="https://x.com/meruwucita" class="icono-vinculo-footer" target="_blank"><i class="fab fa-twitter icono-footer"></i></a>
             
             </div>
             <p class="parrafo-footer">&copy; 2024  Inkimeruwu . All rights reserved.</p>
@@ -239,6 +243,11 @@
     </footer>
 
     <!-- JS para animaciones y funcionalidades -->
-    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script> <!-- Tu archivo principal de JavaScript -->
+
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js
+"></script>
 </body>
 </html>
