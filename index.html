@@ -15,12 +15,14 @@
 </head>
 <body>
     <!-- Navegación -->
-    <header class="header">
+    <header id="inicio" class="header" >
         <nav class="navegador" >
-            <div class="logo">Inkimeruwu</div>
+            <div class="logo"><a href="#inicio">Inkimeruwu <img src="assets/thank-you.gif" alt="" class="logo-gif" ></a></div>
             <ul class="links">
-                <li><a href="#home">Inicio</a></li>
+                
                 <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#termsOfServices">Terminos y Servicios</a></li>
                 <li><a href="#portfolio">Portafolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
@@ -35,7 +37,7 @@
         
     </header>
  <!-- Sección Inicio -->
- <section id="home" class="leyenda-section">
+ <section id="about" class="leyenda-section">
     <div class="leyenda-content">
         <div class="leyenda-text">
             <h2>Bienvenidos a mi mundo creativo</h2>
@@ -45,7 +47,7 @@
     </div>
 </section>
     <!-- Sección Sobre mi -->
-    <section id="about" class="hero-section">
+    <section id="" class="hero-section">
         <div class="hero-content">
             <img src="./assets/image05.jpg" alt="perfil-meru" class="inicio-img">
             <p>Soy una artista digital apasionada por la ilustración y el diseño gráfico. Con años de experiencia, he trabajado en numerosos proyectos que van desde la creación de personajes hasta el diseño de portadas y logotipos.</p>
@@ -54,30 +56,96 @@
         </div>
     </section>
 
-    <section id="about" class="hero-section">
-        <div class="hero-content2">
-            <img src="./assets/gato.gif" alt="perfil-meru" class="inicio-img">
-            <h3>Terminos y Servicio</h3>
-            <img src="assets/moño.png" alt="" srcset="" class="terminoYcondicion_moño">
-            <p>I will draw humans, animals and furries, and have no problem drawing fandom characters, fan characters, or self insert.</p>
-            <p>I won’t draw explicit sexual/nsfw content, heavy gore, heavily mechanized characters, or irl people such as celebrities or youtubers.</p>
-            <p> I must recieve payment for the commission BEFORE starting it (please remember to select services, not goods!!).</p>
-            <p>I will not *refund a commission so please be aware of that </p>
-            <p>When sending in your comission request, please provide colored reference for the character you would like me to draw, as well as a pose/expression, or color palette if you should so desire, as well as any other details!</p>
-            <p> If you would like me to design a character for you, then provide me with a description/theme of what you want!</p>
-            <p> Re-selling my adopts as a higher prices is PROHIBITED.</p>
-            <p> If u dont follow any of my tos or do things that are against this, ill blacklist you.*</p>
-            <p>Once you’ve sent in your request, I’ll send you my paypal.</p>
-            <p> I have a right to refuse any commission requests I am not comfortable drawing !</p>
-            <p>comercial use will have an extra fee (talkative) for the price of the usage/rights for commercial</p>
-            
+    
+
+    <!-- Sección Precios -->
+   
+
+    <section id="precios" class="precios-grid">
+        <h2>Prices</h2>
+        <div class="precios-grid_container">
+            <div class="card-precios">
+                <div class="card-image-precios">
+                    <img src="assets/image01.png" alt="Imagen 1">
+                </div>
+                <div class="card-content_precios">
+                    <h3>HeadShot</h3>
+                    <p>$17 USD + $10 per character</p>
+                </div>
+            </div>
+            <div class="card-precios">
+                <div class="card-image-precios">
+                    <img src="assets/image01.png" alt="Imagen 2">
+                </div>
+                <div class="card-content_precios">
+                    <h3>Halfbody</h3>
+                    <p>$33 USD + $10 per character</p>
+                </div>
+            </div>
+            <div class="card-precios">
+                <div class="card-image-precios">
+                    <img src="assets/image01.png" alt="Imagen 3">
+                </div>
+                <div class="card-content_precios">
+                    <h3>Fullbody</h3>
+                    <p>$43 USD + $10 per character</p>
+                </div>
+            </div>
         </div>
     </section>
 
-   
-
-    <!-- Sección Portafolio -->
+    <section id="termsOfServices" class="hero-section">
+        <div class="hero-content2">
+            <img src="./assets/gato.gif" alt="perfil-meru" class="inicio-img">
+            <h3>Terms of Services</h3>
+            <img src="./assets/moño.png" alt="" srcset="" class="terminoYcondicion_moño">
+            <p>I will draw <span class="importante-texto">humans</span>, <span class="importante-texto">animals</span> and <span class="importante-texto">furries</span>, and have no problem drawing fandom characters, fan characters, or self insert.</p>
+            <p>I <span class="importante-texto">won't</span> draw explicit <span class="importante-texto">sexual/nsfw content</span>, <span class="importante-texto">heavy gore</span>, <span class="importante-texto">heavily mechanized characters</span>, or <span class="importante-texto">irl people</span> such as celebrities or youtubers.</p>
+            <p> I must recieve payment for the commission <span class="importante-texto">BEFORE</span> starting it (please remember to select services, not goods!!).</p>
+            <p>I will not refund a commission so please be aware of that.</p>
+            <p>When sending in your <span class="importante-texto">Comission request</span>, please provide <span class="importante-texto">colored reference</span> for the character you would like me to draw, as well as a <span class="importante-texto">pose/expression</span>, or <span class="importante-texto">color palette</span> if you should so desire, as well as any other details!</p>
+            <p> If you would like me to design a character for you, then provide me with a <span class="importante-texto">description/theme</span> of what you want!</p>
+            <p> <span class="importante-texto">Re-Selling</span> my adopts as a higher prices is <span class="importante-texto">PROHIBITED</span>.</p>
+            <p> If u dont follow any of my tos or do things that are against this, ill <span class="importante-texto">blacklist</span> you.</p>
+            <p>Once you’ve sent in your request, I’ll send you my <span class="importante-texto">paypal</span>.</p>
+            <p> I have a right to refuse any commission requests. I am not comfortable drawing !</p>
+            <p><span class="importante-texto">comercial use will have an extra fee</span> (talkative) for the price of the <span class="importante-texto">usage/rights</span> for commercial.</p>
+            
+        </div>
+    </section>
+<!-- Sección Portafolio -->
     <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="slider">
+            <div class="slider-card prev">
+                <img src="assets/dibumeru.png" alt="Imagen 1">
+            </div>
+            
+            <div class="slider-card active">
+                <img src="assets/dibumeru1.png" alt="Imagen 2">
+            </div>
+            <div class="slider-card next">
+                <img src="assets/dibumeru2.png" alt="Imagen 3">
+            </div>
+            <div class="slider-card ">
+                <img src="assets/dibumeru3.png" alt="Imagen 4">
+            </div>
+            <div class="slider-card ">
+                <img src="assets/dibumeru4.png" alt="Imagen 5">
+            </div>
+            <div class="slider-card ">
+                <img src="assets/dibumeru5.png" alt="Imagen 6">
+            </div>
+            <div class="slider-card ">
+                <img src="assets/dibumeru6.png" alt="Imagen 7">
+            </div>
+            
+        </div>
+    
+       
+    </section>
+    <!-- Sección Portafolio -->
+    <!-- <section id="portfolio" class="portfolio-section">
         <h2>Portafolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
@@ -135,8 +203,8 @@
                 </div>
             </div>
             <!-- Añadir más elementos según sea necesario -->
-        </div>
-    </section>
+        <!-- </div>
+    </section> --> 
 
     <!-- Sección Contacto -->
     <section id="contact" class="contact-section">
@@ -155,13 +223,14 @@
             </div>
         </div>
     </section>
-   
+    
+    
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div  class="social-media">
-                <a href="#" class="icono-vinculo-footer"><i class="fab fa-instagram icono-footer"></i></a>
-            <a href="#" class="icono-vinculo-footer"><i class="fab fa-twitter icono-footer"></i></a>
+                <a href="https://www.instagram.com/meruwucita/" class="icono-vinculo-footer" target="_blank"><i class="fab fa-instagram icono-footer"></i></a>
+            <a href="https://x.com/meruwucita/media" class="icono-vinculo-footer" target="_blank"><i class="fab fa-twitter icono-footer"></i></a>
             
             </div>
             <p class="parrafo-footer">&copy; 2024 Inkimeruwu. Todos los derechos reservados.</p>
